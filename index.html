@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Movies</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2 class="text-center py-4 fw-bolder fs-1">Movies catalog</h2>
+            <div class="row d-flex flex-column flex-sm-row  g-5">
+                <div class="col-4">
+                    <div>
+                        <form class="form-group mb-4" action="https://echo.htmlacademy.ru/" method="get" autocomplete="off">
+                            <input class="form-control mb-3 p-3 opacity-75" name="Movie name" type="text" placeholder="Movie name" aria-label="Search movie">
+                            <input class="form-control mb-3 p-3 opacity-75" name="Part of the movie" type="text" placeholder="Part of the movie" aria-label="Search part of the movie">
+                            <select class="form-select form-select-lg mb-3 p-3 opacity-75" aria-label="Movie series">
+                                <option selected>All</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <select class="form-select form-select-lg mb-3 p-3 opacity-75" aria-label="Movie rating">
+                                <option selected disabled>Rating(high to low)</option>
+                                <option value="1">1 star</option>
+                                <option value="2">2 star</option>
+                                <option value="3">3 star</option>
+                                <option value="4">4 star</option>
+                                <option value="6">6 star</option>
+                                <option value="7">7 star</option>
+                                <option value="8">8 star</option>
+                                <option value="9">9 star</option>
+                                <option value="10">10 star</option>
+                            </select>
+                            <button type="button" class="btn btn-primary d-block w-100 p-3 fw-bolder fs-5">Primary</button>
+                        </form>
+                        <div class="mb-5">
+                            <h3 class="fs-1 fw-bolder mb-2">Bookmarked movies</h3>
+                            <ul class="list-group list-group">
+                                <li class="list-group-item p-3">
+                                    <h4 class="mb-3">Avengers: Infinity War</h4>
+                                    <button type="button" class="btn btn-danger fs-5">Remove</button>
+                                </li>
+                                <li class="list-group-item p-3">
+                                    <h4 class="mb-3">The Avengers</h4>
+                                    <button type="button" class="btn btn-danger fs-5">Remove</button>
+                                </li>
+                                <li class="list-group-item p-3">
+                                    <h4 class="mb-3">12 Years a Slave</h4>
+                                    <button type="button" class="btn btn-danger fs-5">Remove</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div>
+                        <p class="fw-bolder fs-2 mb-3">Search result: 39</p>
+                        <div class="alert alert-primary fs-5 mb-4" role="alert">
+                            Use the form on the left to search for a movie
+                        </div>
+                        <div class="row flex-column flex-sm-row">
+                            <div class="col-6">
+                                <div class="border border-secondary rounded-3">
+                                    <div id="carouselimg" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="2500">
+                                                <img src="./images/infinitywar.jpg" 
+                                                width="410"
+                                                height="290"
+                                                alt="Avengers Infinity war movie image">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="2000">
+                                                <img src="./images/Avengers-Infinity-War-2.png"
+                                                width="410"
+                                                height="290"
+                                                alt="Avengers Infinity war movie image">
+                                            </div>
+                                            <div class="carousel-item"
+                                            data-bs-interval="2000">
+                                            <img src="./images/Avengers-Infinity-War-3.png"
+                                            width="410"
+                                            height="290"
+                                            alt="Avengers Infinity war movie image">
+                                        </div>
+                                        <div class="carousel-item"
+                                        data-bs-interval="2000">
+                                        <img src="./images/avengers_iw_poster.jpg"
+                                        width="410"
+                                        height="290"
+                                        alt="Avengers Infinity war movie image">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/Avengers-Infinity-War-4.png"
+                                        width="410"
+                                        height="290"
+                                        alt="Avengers Infinity war movie image">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselimg" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselimg" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="fs-3 mb-3">Avengers: Infinity War</h4>
+                                <span class="d-flex mb-4">
+                                    <img class="me-2" src="./images/calendar-silhouette.png" 
+                                    width="30"
+                                    height="30"
+                                    alt="icon calendar">
+                                    2018
+                                </span>
+                                <span class="d-flex mb-3">
+                                    <img class="me-2" src="./images/star.png" 
+                                    width="25"
+                                    height="25"
+                                    alt="icon star">
+                                    8.7
+                                </span>
+                                <div class="d-flex justify-content-between">
+                                    <button type="button" class="btn btn-outline-primary">Watch trailer</button>
+                                    <button type="button" class="btn btn-outline-info"  data-bs-toggle="modal" data-bs-target="#moreinfo-i-w">More info</button>
+                                    <button type="button" class="btn btn-outline-success">Bookmark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="border border-secondary rounded-top">
+                            <div id="carouselimg-iw" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="2500">
+                                        <img src="./images/avengers.jpg" 
+                                        width="410"
+                                        height="290"
+                                        alt="The Avengers">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="./images/avengers-2.jpg" 
+                                        width="410"
+                                        height="290"
+                                        alt="The Avengers">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="./images/avengers-3.jpg" 
+                                        width="410"
+                                        height="290"
+                                        alt="The Avengers">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="./images/avengers-5.jpg" 
+                                        width="410"
+                                        height="290"
+                                        alt="The Avengers">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/avengers-4.jpg" 
+                                        width="410"
+                                        height="290"
+                                        alt="The Avengers">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselimg-iw" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselimg-iw" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="p-4">
+                                <h4 class="fs-3 mb-3">The Avengers</h4>
+                                <span class="d-flex mb-4">
+                                    <img class="me-2" src="./images/calendar-silhouette.png" 
+                                    width="30"
+                                    height="30"
+                                    alt="icon calendar">
+                                    2012
+                                </span>
+                                <span class="d-flex mb-3">
+                                    <img class="me-2" src="./images/star.png" 
+                                    width="25"
+                                    height="25"
+                                    alt="icon star">
+                                    8.1
+                                </span>
+                                <div class="d-flex justify-content-between">
+                                    <button type="button" class="btn btn-outline-primary">Watch trailer</button>
+                                    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#moreinfo">More info</button>
+                                    <button type="button" class="btn btn-outline-success">Bookmark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="d-flex justify-content-center mt-5">
+                    <ul class="pagination pagination-lg">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="moreinfo-i-w" tabindex="-1" aria-labelledby="More info movie" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Avengers: Infinity War</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                "Infinity War" redirects here. For other uses, see Infinity War (disambiguation).
+                Avengers: Infinity War
+                Avengers Infinity War poster.jpg
+                Theatrical release poster
+                Directed by	
+                Anthony Russo
+                Joe Russo
+                Screenplay by	
+                Christopher Markus
+                Stephen McFeely
+                Based on	
+                Avengers
+                by Stan Lee
+                Jack Kirby
+                Produced by	Kevin Feige
+                Starring	
+                Robert Downey Jr.
+                Chris Hemsworth
+                Mark Ruffalo
+                Chris Evans
+                Scarlett Johansson
+                Benedict Cumberbatch
+                Don Cheadle
+                Tom Holland
+                Chadwick Boseman
+                Paul Bettany
+                Elizabeth Olsen
+                Anthony Mackie
+                Sebastian Stan
+                Danai Gurira
+                Letitia Wright
+                Dave Bautista
+                Zoe Saldaña
+                Josh Brolin
+                Chris Pratt
+                Cinematography	Trent Opaloch
+                Edited by	
+                Jeffrey Ford
+                Matthew Schmidt
+                Music by	Alan Silvestri
+                Production
+                company	
+                Marvel Studios
+                Distributed by	Walt Disney Studios Motion Pictures
+                Release dates	
+                April 23, 2018 (Dolby Theatre)
+                April 27, 2018 (United States)
+                Running time	149 minutes[1]
+                Country	United States
+                Language	English
+                Budget	$325–400 million[2][3]
+                Box office	$2.048 billion[4]
+                Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the sequel to The Avengers (2012) and Avengers: Age of Ultron (2015), and the 19th film in the Marvel Cinematic Universe (MCU).
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Next page</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="moreinfo" tabindex="-1" aria-labelledby="More info movie" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">The Avengers</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                "Marvel's The Avengers" redirects here. For the original comic book characters, see Avengers (comics). For other uses, see Avenger (disambiguation).
+                The Avengers
+                The Avengers (2012 film) poster.jpg
+                Theatrical release poster
+                Directed by	Joss Whedon
+                Screenplay by	Joss Whedon
+                Story by	
+                Zak Penn
+                Joss Whedon
+                Based on	
+                Avengers
+                by Stan Lee
+                Jack Kirby
+                Produced by	Kevin Feige
+                Starring	
+                Robert Downey Jr.
+                Chris Evans
+                Mark Ruffalo
+                Chris Hemsworth
+                Scarlett Johansson
+                Jeremy Renner
+                Tom Hiddleston
+                Clark Gregg
+                Cobie Smulders
+                Stellan Skarsgård
+                Samuel L. Jackson
+                Cinematography	Seamus McGarvey
+                Edited by	
+                Jeffrey Ford
+                Lisa Lassek
+                Music by	Alan Silvestri
+                Production
+                company	
+                Marvel Studios
+                Distributed by	Walt Disney Studios
+                Motion Pictures[N 1]
+                Release dates	
+                April 11, 2012 (El Capitan Theatre)
+                May 4, 2012 (United States)
+                Running time	143 minutes[3]
+                Country	United States
+                Language	English
+                Budget	$220 million[4]
+                Box office	$1.519 billion[5]
+                Marvel's The Avengers[6] (classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland),[3][7] or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name. 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Next page</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./js/bootstrap.js"></script>
+</body>
+</html>
